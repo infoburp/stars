@@ -3,3 +3,12 @@
 <p>20 = medium prezzie</p>
 <p>50 = minibreak</p>
 <img src="IMG_0008.PNG"/>
+
+<script>
+  var startday = "12/25/2016"
+  var gooddays = 0;
+  var baddays = 0;
+  var now = new Date();
+  var dayssince =  Math.floor(( now - Date.parse(startday) ) / 86400000); 
+  console.log(dayssince);
+</script>
