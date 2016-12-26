@@ -18,6 +18,12 @@
     gooddays = 0;
   }
   for (i = 0;i<=gooddays;i++){
-      document.getElementById("stars").innerHTML += "*";
+      var elem = document.createElement("img");
+      elem.setAttribute("src", "IMG_0008.PNG");
+      elem.setAttribute("height", "64");
+      elem.setAttribute("width", "64");
+      elem.setAttribute("alt", "*");
+      document.getElementById("stars").appendChild(elem);
+      //document.getElementById("stars").innerHTML += "*";
   }
 </script>
