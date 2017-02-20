@@ -3,7 +3,7 @@
 <p>140 = medium prezzie</p>
 <p>350 = minibreak</p>
 <div id = "stars"> </div>
-
+<div id = "totalstars"></div>
 <script>
   var startday = "12/25/2016"
   var gooddays = 0;
@@ -25,5 +25,7 @@
       elem.setAttribute("alt", "*");
       document.getElementById("stars").appendChild(elem);
       //document.getElementById("stars").innerHTML += "*";
+    
   }
+  document.getElementById("totalstars").innerHTML = "You've got " + gooddays + " stars :)"
 </script>
